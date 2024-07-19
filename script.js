@@ -13,5 +13,14 @@ for(list of lists){
             rightBox.appendChild(selected);
             selected = null;
         });
+
+        // left box drag and drop functionality
+        leftBox.addEventListener("dragover", function(e){
+            e.preventDefault();
+        });
+        leftBoxtBox.addEventListener("drop", function(e){
+            leftBox.appendChild(selected);
+            selected = null;
+        });
     })
 }
